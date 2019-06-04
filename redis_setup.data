@@ -1,0 +1,5 @@
+LPUSH tasks "Go Food Shopping"
+LPUSH tasks "Dinner With Family"
+LPUSH tasks "Meeting At Work"
+
+HMSET call name "John Doe" company "Google" phone "1234" time "3 pm"

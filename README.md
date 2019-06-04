@@ -21,3 +21,6 @@
 - To avoid restarting the sever every time we modify the app.js(backend) file, I executed `sudo npm install nodemon -g` to install `nodemon` globally but got `EACCES` error. I solved the problem as follows(still got error but nodemon could be used after those changes):
 - `npm config set prefix /usr/local`
 - `sudo npm install nodemon -g --registry=https://registry.npm.taobao.org`
+
+### Can not Shutdown Redis
+- Execute `shutdown nosave` in `redis-cli`.
