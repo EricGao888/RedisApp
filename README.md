@@ -1,4 +1,5 @@
 # RedisApp
+- [Project Review: Redis](https://ericgao888.github.io/2019/06/05/redis/)
 
 ## Project Description
 - A task manager web application based on Redis and Node.js.
