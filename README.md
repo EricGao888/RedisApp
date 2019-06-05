@@ -21,6 +21,11 @@
 - To avoid restarting the sever every time we modify the app.js(backend) file, I executed `sudo npm install nodemon -g` to install `nodemon` globally but got `EACCES` error. I solved the problem as follows(still got error but nodemon could be used after those changes):
 - `npm config set prefix /usr/local`
 - `sudo npm install nodemon -g --registry=https://registry.npm.taobao.org`
+- Execute `nodemon` in terminal of the project directory to start.
+
+### Redis Data Modification Refusal
+- I locatee `rdb` file: `sudo locate *rdb` but got the warning `The locate database (/var/db/locate.database) does not exist.`
+- I set up database: `sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist` and the problem was solved.
 
 ### Can not Shutdown Redis
 - Execute `shutdown nosave` in `redis-cli`.
